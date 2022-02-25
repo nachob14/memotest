@@ -5,14 +5,94 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='node_modules/bootstrap/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='src/index.css'>
     
 </head>
 <body>
-    
+    <div class="container" id="cartelBienvenida">
+        <br>
+        <div class="row">
+            <div class="col">
+                <h2 class="text-center">Bienvenido al juego 'MemoTest'</h2>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <h4 class="text-center">Tu objetivo es encontrar todos los pares de colores hasta terminar el juego</h4>
+                <p class="text-center">Presiona el boton para comenzar a jugar</p>
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-sm-1">
+                <button type="button" class="btn btn-primary" id="botonJugar">Jugar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid h-100 oculto" id="tableroJuego">
+        <div class="row fila">
+            <div class="col columna">
+                <div class="cuadro h-100"></div>
+            </div>
+            <div class="col columna">
+                <div class="cuadro h-100"></div>
+            </div>
+            <div class="col columna">
+                <div class="cuadro h-100"></div>
+            </div>
+        </div>
+        <div class="row fila">
+            <div class="col columna">
+                <div class="cuadro h-100"></div>
+            </div>
+            <div class="col columna">
+                <div class="cuadro h-100"></div>
+            </div>
+            <div class="col columna">
+                <div class="cuadro h-100"></div>
+            </div>
+        </div>
+        <div class="row fila">
+            <div class="col columna">
+                <div class="cuadro h-100"></div>
+            </div>
+            <div class="col columna">
+                <div class="cuadro h-100"></div>
+            </div>
+            <div class="col columna">
+                <div class="cuadro h-100"></div>
+            </div>
+        </div>
+        <div class="row fila">
+            <div class="col columna">
+                <div class="cuadro h-100"></div>
+            </div>
+            <div class="col columna">
+                <div class="cuadro h-100"></div>
+            </div>
+            <div class="col columna">
+                <div class="cuadro h-100"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container oculto" id="mensajeFin">
+        <br>
+        <div class="row">
+            <div class="col">
+                <h2 class="text-center">Felicitaciones! Terminaste el juego. Tardaste <strong id="turnos"></strong> turnos</h2>
+            </div>
+        </div>
+    </div>
 
 
 
-    <script src='src/index.js'></script>
+    <script src='src/inicioJuego.js'></script>
+    <script src='src/juego.js'></script>
+
+
 </body>
 </html>

@@ -1,0 +1,25 @@
+{
+  "name": "memotest",
+  "version": "1.0.0",
+  "description": "Juego de memoria para r/ArgentinaPrograma",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nachob14/memotest.git"
+  },
+  "author": "Juan Ignacio Bordon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nachob14/memotest/issues"
+  },
+  "homepage": "https://github.com/nachob14/memotest#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  },
+  "devDependencies": {
+    "cypress": "^9.5.0"
+  }
+}
